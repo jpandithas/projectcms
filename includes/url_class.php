@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Ioannis
- * Date: 22-Jan-15
- * Time: 1:35 PM
- */
 
 class URL
 {
