@@ -10,19 +10,21 @@ global $content;
  */
 function boot ()
 {
-//    include("theme_engine.php");
-//    include("url_class.php");
-//    include("pdo_class.php");
-
+    global $content;
     $includes = glob ("includes/*");
     foreach ($includes as $file )
     {
-       if (is_readable($file) && !is_uploaded_file($file))
+       if (is_readable($file) && !is_uploaded_file($file) && $file !="includes/theme_engine.php")
        {
            include_once($file);
+
        }
     }
-
+    $url = new URL();
+    include "includes/theme_engine.php";
+    Router::execute_Module($url, null);
     include("themes/theme.php");
 }
+
+
 ?>

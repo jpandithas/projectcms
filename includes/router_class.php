@@ -14,7 +14,7 @@ class Router
       else return $function;
   }
 
-    public static function execute_Module(URL $URL)
+    public static function execute_Module(URL $URL, $args)
     {
         if (self::findModule($URL))
         {
@@ -26,7 +26,7 @@ class Router
                 if (is_file($mod_filename))
                 {
                     include $mod_filename;
-                    call_user_func($func,"Some Data");
+                    call_user_func($func,$args);
                 }
             }
         }
