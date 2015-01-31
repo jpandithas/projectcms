@@ -42,26 +42,25 @@ h1, h2,h3 p {
     clear: left;
 }
 
+#inner{
+    background-color: lightblue ;
+}
+
 /* left sidebar*/
 #sidebar-left {
     font-family: sans-serif, helvetica;
     color: darkslateblue;
-    padding-left: 15px;
     width: 200px;
-    min-height: 100px;
-    float: left;
+    float:left;
     background: lightblue;
-    border-bottom: solid 1px azure;
     border-top: solid 1px azure;
-    height: auto;
 }
 
 /* Style for the Content Area */
 
 #content-main {
-    padding: 0.5em;
+    margin-left: 201px;
     background: white;
-    margin-left: 200px;
 
 }
 
@@ -72,6 +71,7 @@ h1, h2,h3 p {
     padding: 15px;
     background: lightblue;
     text-align: center;
+    border-top: 1px solid azure;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     clear: left;

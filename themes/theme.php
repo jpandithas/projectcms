@@ -15,8 +15,10 @@ $content .= "<br>This is the theme<br>";
 <body>
 <div id="wrapper-site">
     <div id = "header"><?php print_header(); ?></div>
+   <div id="inner">
     <div id = "sidebar-left"><?php print_sidebar();?></div>
     <div id = "content-main"><?php print_content();?></div>
+   </div>
     <div id = "footer"><?php print_footer(); ?></div>
     </div>
 
