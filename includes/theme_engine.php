@@ -6,8 +6,9 @@
 
 function print_content()
 {
-    global $content;
+
     ob_start();
+    global $content;
     if (!isset($content))
     {
        $content .= "No Content to display";
