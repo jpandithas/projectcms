@@ -106,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="redirect_class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="redirect_class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/classes/redirect_class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40236688" vertical-offset="0" max-vertical-offset="845">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+            <state vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="731">
+              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
               <folding>
                 <element signature="e#6#49#0#PHP" expanded="true" />
               </folding>
@@ -135,6 +135,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="629">
               <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5990566" vertical-offset="614" max-vertical-offset="1462">
+              <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -185,12 +195,12 @@
         <option value="$PROJECT_DIR$/modules/create_user/create_user.php" />
         <option value="$PROJECT_DIR$/includes/theme_engine.php" />
         <option value="$PROJECT_DIR$/themes/theme.php" />
-        <option value="$PROJECT_DIR$/themes/style.css" />
         <option value="$PROJECT_DIR$/includes/bootstrap.php" />
         <option value="$PROJECT_DIR$/includes/classes/redirect.php" />
         <option value="$PROJECT_DIR$/includes/classes/url_class.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/includes/classes/redirect_class.php" />
+        <option value="$PROJECT_DIR$/themes/style.css" />
       </list>
     </option>
   </component>
@@ -870,14 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5813679" vertical-offset="510" max-vertical-offset="1462">
-          <caret line="59" column="15" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/misc/theme_engine.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="629">
@@ -979,11 +981,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/classes/redirect_class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40236688" vertical-offset="0" max-vertical-offset="845">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        <state vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="731">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
           <folding>
             <element signature="e#6#49#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5990566" vertical-offset="614" max-vertical-offset="1462">
+          <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

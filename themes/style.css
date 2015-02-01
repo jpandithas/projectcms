@@ -11,7 +11,7 @@ html {
 /* header styles*/
 h1, h2,h3 p {
     margin: 4px 8px;
-    font-family: Thahoma, helvetica, sans-serif ;
+    font-family: Arial, helvetica, sans-serif ;
     color: darkslateblue;
 }
 
@@ -47,7 +47,7 @@ h1, h2,h3 p {
 
 /* left sidebar*/
 #sidebar-left {
-    font-family: Thahoma, helvetica, sans-serif;
+    font-family: Arial, helvetica, sans-serif;
     color: darkslateblue;
     width: 200px;
     float:left;
@@ -62,13 +62,13 @@ h1, h2,h3 p {
     padding-left: 0.4em;
     margin-left: 201px;
     background: white;
-    font-family: Thahoma, helvetica, sans-serif;
+    font-family: Tahoma, helvetica, sans-serif;
 
 }
 
 /* Footer */
 #footer {
-    font-family: sans-serif, helvetica;
+    font-family: Tahoma, helvetica, sans-serif;
     color: darkslateblue;
     padding: 15px;
     background: lightblue;
