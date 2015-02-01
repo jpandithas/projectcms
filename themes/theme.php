@@ -3,7 +3,6 @@
  * Date: 19-Jan-15
  * Time: 8:36 PM
  */
-global $content;
 ?>
 <html>
 <head>

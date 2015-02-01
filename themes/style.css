@@ -1,22 +1,25 @@
 /*css file for the theme */
 
-html {
+html
+{
     background: lightsteelblue;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	}
+}
 
-/* header styles*/
-h1, h2,h3 p {
+/* Header Styles*/
+h1,h2,h3
+{
     margin: 4px 8px;
     font-family: Arial, helvetica, sans-serif ;
     color: darkslateblue;
 }
 
 /* Wrapper for the whole site */
-#wrapper-site {
+#wrapper-site
+{
     background: white;
     width: 90%;
     border: solid 7px gainsboro;
@@ -30,8 +33,9 @@ h1, h2,h3 p {
     -moz-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.9);
     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.9);
 }
-/* header*/
-#header {
+/* Header*/
+#header
+{
     background: lightblue;
     padding: 15px;
     border-top-left-radius: 3px;
@@ -41,12 +45,14 @@ h1, h2,h3 p {
     clear: left;
 }
 
-#inner{
+#inner
+{
     background-color: lightblue ;
 }
 
-/* left sidebar*/
-#sidebar-left {
+/* Left Sidebar*/
+#sidebar-left
+{
     font-family: Arial, helvetica, sans-serif;
     color: darkslateblue;
     width: 200px;
@@ -57,17 +63,24 @@ h1, h2,h3 p {
 
 /* Style for the Content Area */
 
-#content-main {
+#content-main
+{
     padding-top: 0.2em;
     padding-left: 0.4em;
     margin-left: 201px;
     background: white;
     font-family: Tahoma, helvetica, sans-serif;
+}
 
+#content-main p
+{
+    margin-top: 1px;
+    margin-bottom: 0;
 }
 
 /* Footer */
-#footer {
+#footer
+{
     font-family: Tahoma, helvetica, sans-serif;
     color: darkslateblue;
     padding: 15px;

@@ -6,9 +6,8 @@
 
 function print_content()
 {
-
     ob_start();
-    global $content;
+    $content = $GLOBALS['content'];
     if (!isset($content))
     {
        $content .= "No Content to display";
@@ -32,4 +31,8 @@ function print_footer()
     echo "Footer";
 }
 
+    function content($content)
+    {
+        $GLOBALS['content'] .= $content;
+    }
 ?>

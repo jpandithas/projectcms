@@ -6,14 +6,15 @@
 
 function create_page($args)
 {
-    global $content;
-    $content .=  "create_page With $args";
+
+    $content .=  " create_page With $args";
     $content .= something($args);
+    content($content);
 }
 
 function something($args) {
 
-    return  "<br>I am called with args".$args." and ".__FUNCTION__;
+    return  "<br>I am called with args: ".$args." and ".__FUNCTION__;
 
 }
 
