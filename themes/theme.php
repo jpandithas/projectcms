@@ -4,8 +4,6 @@
  * Time: 8:36 PM
  */
 global $content;
-
-$content .= "<br>This is the theme<br>";
 ?>
 <html>
 <head>
