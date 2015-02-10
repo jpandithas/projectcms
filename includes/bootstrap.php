@@ -10,8 +10,6 @@
  */
 function boot ()
 {
-   // global $content;
-    $content = null;
     fileloader("includes/classes/*");
     fileloader("includes/misc/*");
     $url = new URL();

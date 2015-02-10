@@ -18,7 +18,6 @@ class Theme
         {
 
             include $theme_file;
-            append_content("<h1>LOADED</h1>");
         }
         else
         {
