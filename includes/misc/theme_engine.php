@@ -31,7 +31,11 @@ function print_footer()
     echo "Footer";
 }
 
+<<<<<<< HEAD:includes/misc/theme_engine.php
     function append_content($content)
+=======
+    function content($content)
+>>>>>>> origin/master:includes/misc/theme_engine.php
     {
         $GLOBALS['content'] .= $content;
     }

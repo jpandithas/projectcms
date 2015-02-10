@@ -31,7 +31,10 @@ class Redirection
 
         echo $basepath."?".$linktext;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
     }
 
 }

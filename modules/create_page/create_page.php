@@ -7,9 +7,15 @@
 function create_page($args)
 {
 
+<<<<<<< HEAD
     $content =  " create_page With $args";
     $content .= something($args);
     append_content($content);
+=======
+    $content .=  " create_page With $args";
+    $content .= something($args);
+    content($content);
+>>>>>>> origin/master
 }
 
 function something($args) {
