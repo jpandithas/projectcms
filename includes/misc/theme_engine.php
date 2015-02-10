@@ -35,6 +35,12 @@ function print_footer()
     function append_content($content)
 
     {
-        $GLOBALS['content'] .= $content;
+        if (isset($GLOBALS['content'])) {
+            $GLOBALS['content'] = $content;
+        }
+        else
+        {
+            $GLOBALS['content'] .= $content;
+        }
     }
 ?>

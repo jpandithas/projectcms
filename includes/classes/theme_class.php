@@ -16,14 +16,13 @@ class Theme
         $theme_file = "themes/".$path."/theme.php";
         if (is_readable($theme_file))
         {
+
             include $theme_file;
-            echo "loaded";
+            append_content("<h1>LOADED</h1>");
         }
         else
         {
             include "themes/default/theme.php";
-            append_content("Default Theme Included!!!!!!!!");
-
         }
 
     }

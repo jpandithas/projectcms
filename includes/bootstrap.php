@@ -10,7 +10,7 @@
  */
 function boot ()
 {
-    global $content;
+   // global $content;
     $content = null;
     fileloader("includes/classes/*");
     fileloader("includes/misc/*");
