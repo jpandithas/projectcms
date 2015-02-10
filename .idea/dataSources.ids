@@ -16,6 +16,12 @@
       <column name="function" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="rid"/>
     </table>
+    <table name="themes" schema="" catalog="cms" type="TABLE">
+      <column name="tid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="theme_name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="enabled" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <primary-key name="PRIMARY" columns="tid"/>
+    </table>
     <table name="users" schema="" catalog="cms" type="TABLE">
       <column name="uid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="uname" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>

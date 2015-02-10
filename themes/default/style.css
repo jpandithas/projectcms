@@ -1,38 +1,41 @@
 /*css file for the theme */
 
-html {
+html
+{
     background: lightsteelblue;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	}
+}
 
-/* header styles*/
-h1, h2,h3 p {
+/* Header Styles*/
+h1,h2,h3
+{
     margin: 4px 8px;
-    font-family: sans-serif, helvetica;
+    font-family: Arial, helvetica, sans-serif ;
     color: darkslateblue;
 }
 
 /* Wrapper for the whole site */
-#wrapper-site {
+#wrapper-site
+{
     background: white;
     width: 90%;
-    border: solid 7px grey;
+    border: solid 7px gainsboro;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
-    border-color: gainsboro;
     -webkit-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.9);
     -moz-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.9);
     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.9);
 }
-/* header*/
-#header {
+/* Header*/
+#header
+{
     background: lightblue;
     padding: 15px;
     border-top-left-radius: 3px;
@@ -42,36 +45,48 @@ h1, h2,h3 p {
     clear: left;
 }
 
-/* left sidebar*/
-#sidebar-left {
-    font-family: sans-serif, helvetica;
+#inner
+{
+    background-color: lightblue ;
+}
+
+/* Left Sidebar*/
+#sidebar-left
+{
+    font-family: Arial, helvetica, sans-serif;
     color: darkslateblue;
-    padding-left: 15px;
     width: 200px;
-    min-height: 100px;
-    float: left;
+    float:left;
     background: lightblue;
-    border-bottom: solid 1px azure;
     border-top: solid 1px azure;
-    height: auto;
 }
 
 /* Style for the Content Area */
 
-#content-main {
-    padding: 0.5em;
+#content-main
+{
+    padding-top: 0.2em;
+    padding-left: 0.4em;
+    margin-left: 201px;
     background: white;
-    margin-left: 200px;
+    font-family: Tahoma, helvetica, sans-serif;
+}
 
+#content-main p
+{
+    margin-top: 1px;
+    margin-bottom: 0;
 }
 
 /* Footer */
-#footer {
-    font-family: sans-serif, helvetica;
+#footer
+{
+    font-family: Tahoma, helvetica, sans-serif;
     color: darkslateblue;
     padding: 15px;
     background: lightblue;
     text-align: center;
+    border-top: 1px solid azure;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     clear: left;

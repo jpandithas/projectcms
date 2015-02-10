@@ -6,12 +6,14 @@
 
 function print_content()
 {
-    global $content;
+    ob_start();
+    $content = $GLOBALS['content'];
     if (!isset($content))
     {
        $content .= "No Content to display";
     }
     print($content);
+    ob_end_flush();
 }
 
 function print_header()
@@ -29,4 +31,8 @@ function print_footer()
     echo "Footer";
 }
 
+    function append_content($content)
+    {
+        $GLOBALS['content'] .= $content;
+    }
 ?>

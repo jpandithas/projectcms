@@ -6,13 +6,15 @@
 
 function create_page($args)
 {
-    echo "create_page With $args";
-    something($args);
+
+    $content =  " create_page With $args";
+    $content .= something($args);
+    append_content($content);
 }
 
 function something($args) {
 
-    echo "<br>I am called with args".$args." and ".__FUNCTION__;
+    return  "<br>I am called with args: ".$args." and ".__FUNCTION__;
 
 }
 

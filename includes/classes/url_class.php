@@ -30,6 +30,13 @@ class URL
         }
     }
 
+    public function writeURL (array $URL)
+    {
+        if (!empty($URL['action'])) $this->action = $URL['action'] ;
+        $this->type = $URL['type'];
+        $this->id = $URL['id'];
+    }
+
     public function GetUrlComponents($indexed)
     {
         if ($indexed==TRUE)
