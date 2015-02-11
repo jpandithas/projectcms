@@ -17,14 +17,14 @@ function switch_theme($args)
       $form .= "<tr><td>".$themes[$i]['theme_name']."</td>";
         if ($themes[$i]['enabled'] == 0)
         {
-            $form .= "<td>Disabled</td></tr>";
+            $form .= "<td>Disabled</td><td><input type='radio' name='theme' value='".$themes[$i]['tid']."'</td></tr>";
         }
         else
         {
-            $form .= "<td>Enabled</td></tr>";
+            $form .= "<td>Enabled</td><td><input type='radio' name='theme' value='".$themes[$i]['tid']."'</td> </tr>";
         }
     }
-    $form .="</table></form>";
+    $form .="</table><input name='submit' type='submit' value='SelectTheme'></form> ";
     append_content($form);
 
 }
