@@ -11,7 +11,7 @@ function switch_theme($args)
     $themes = $query ->sendpQuery($sql, array());
     $rows = count($themes);
     $form = "<form id='form' action='' method='POST'>";
-    $form .= "<table><tr><td> Theme Name </td><td> Status </td><td> Select </td></tr>";
+    $form .= "<table><thead><tr><td> Theme Name </td><td> Status </td><td> Select </td></tr></thead>";
     for ($i=0; $i<$rows; $i++)
     {
       $form .= "<tr><td>".$themes[$i]['theme_name']."</td>";

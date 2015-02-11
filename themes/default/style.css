@@ -61,6 +61,32 @@ h1,h2,h3
     border-top: solid 1px azure;
 }
 
+/* table basic settings */
+table
+{
+    width: 70%;
+    margin: 0px;
+    border: 1px solid lightgray;
+}
+
+thead
+{
+    font-weight: bold;
+    background: lightblue;
+    border-bottom: 1px solid lightgray;
+}
+
+tr:hover
+{
+    background: lightskyblue;
+}
+
+/*form basic settings */
+form
+{
+    margin: 0px;
+}
+
 /* Style for the Content Area */
 
 #content-main
