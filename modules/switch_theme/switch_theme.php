@@ -26,6 +26,17 @@ function switch_theme($args)
     }
     $form .="</table><input name='submit' type='submit' value='SelectTheme'></form> ";
     append_content($form);
+    $submit  = $_POST['submit'];
+    if ($submit == 'SelectTheme')
+    {
+        $theme_id = $_POST['theme'];
+        if (isset($theme_id))
+        {
+            $sql = "UPDATE themes SET enabled = 1 WHERE tid=$theme_id";
+            $query->sendpQuery($sql, array());
+        }
+
+    }
 
 }
 
