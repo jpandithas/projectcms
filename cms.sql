@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 29, 2015 at 12:39 PM
+-- Generation Time: Feb 16, 2015 at 05:45 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -34,14 +34,37 @@ CREATE TABLE IF NOT EXISTS `routes` (
   `status` enum('Enabled','Disabled') NOT NULL,
   `function` varchar(50) NOT NULL,
   PRIMARY KEY (`rid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `routes`
 --
 
 INSERT INTO `routes` (`rid`, `action`, `type`, `id`, `status`, `function`) VALUES
-(1, 'create', 'page', NULL, 'Enabled', 'create_page');
+(1, 'create', 'page', NULL, 'Enabled', 'create_page'),
+(2, 'create', 'user', NULL, 'Enabled', 'create_user'),
+(3, 'switch', 'theme', NULL, 'Enabled', 'switch_theme');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `themes`
+--
+
+CREATE TABLE IF NOT EXISTS `themes` (
+  `tid` int(11) NOT NULL AUTO_INCREMENT,
+  `theme_name` varchar(255) NOT NULL,
+  `enabled` tinyint(1) NOT NULL,
+  PRIMARY KEY (`tid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `themes`
+--
+
+INSERT INTO `themes` (`tid`, `theme_name`, `enabled`) VALUES
+(1, 'default', 1),
+(2, 'theme2', 0);
 
 -- --------------------------------------------------------
 
