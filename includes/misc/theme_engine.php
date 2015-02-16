@@ -7,11 +7,16 @@
 function print_content()
 {
     ob_start();
-    $content = $GLOBALS['content'];
-    if (!isset($content))
+
+    if (!isset($GLOBALS['content']))
     {
-       $content .= "No Content to display";
+       $content = "No Content to display";
     }
+    else
+    {
+        $content = $GLOBALS['content'];
+    }
+
     print($content);
     ob_end_flush();
 }

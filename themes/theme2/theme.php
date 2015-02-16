@@ -6,7 +6,7 @@
 ?>
 <html>
 <head>
-    <link rel="stylesheet" href="themes/default/style.css">
+    <link rel="stylesheet" href="themes/theme2/style.css">
     <title>My CMS</title>
 </head>
 <body>

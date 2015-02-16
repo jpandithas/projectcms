@@ -17,6 +17,12 @@ h1,h2,h3
     color: darkslateblue;
 }
 
+/*form styling */
+form
+{
+    margin: 0px;
+}
+
 /* Wrapper for the whole site */
 #wrapper-site
 {
