@@ -37,7 +37,7 @@ function print_footer()
 }
 
 
-    function append_content($content)
+function append_content($content)
 
     {
         if (isset($GLOBALS['content']))

@@ -11,6 +11,9 @@ class URL
     protected $type;
     protected $id;
 
+    /**
+     * Constructor
+     */
     public function __construct()
     {
         $this->validate_Get("action");
@@ -18,6 +21,9 @@ class URL
         $this->validate_Get("id");
     }
 
+    /**
+     * @param $variable
+     */
     protected function validate_Get($variable)
     {
         if (isset($_GET[$variable]))
@@ -30,6 +36,9 @@ class URL
         }
     }
 
+    /**
+     * @param array $URL
+     */
     public function writeURL (array $URL)
     {
         if (!empty($URL['action'])) $this->action = $URL['action'] ;
@@ -37,6 +46,10 @@ class URL
         $this->id = $URL['id'];
     }
 
+    /**
+     * @param $indexed
+     * @return array|bool
+     */
     public function GetUrlComponents($indexed)
     {
         if ($indexed==TRUE)
@@ -53,6 +66,10 @@ class URL
         }
     }
 
+    /**
+     * @param array $url_components_array
+     * @return string
+     */
     public function build_Path(array $url_components_array)
     {
         $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['SCRIPT_NAME']."?";
@@ -68,6 +85,12 @@ class URL
         return $url;
     }
 
+    /**
+     * @param $link_id
+     * @param $link_text
+     * @param array $url_components_array
+     * @return string
+     */
     public function build_Link($link_id, $link_text, array $url_components_array)
     {
         $link = "<a id='$link_id' href='";
