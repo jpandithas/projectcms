@@ -11,6 +11,12 @@ function create_page($args)
     $content .= something($args);
     append_content($content);
 
+    $form = new Webform("", "POST", "myform");
+    $form->add_text("<h3>Header</h3>");
+    $form->insert_textbox("", "header");
+    $formdata = $form->getForm();
+    append_content($formdata);
+
 }
 
 function something($args) {

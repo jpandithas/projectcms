@@ -10,7 +10,6 @@ class Webform
 {
     protected $formdata;
 
-
     public function __construct($action, $method, $name)
     {
         $this->formdata = "<form name = " . $name ." action = ". $action. " method = ". $method." > ";
@@ -45,6 +44,14 @@ class Webform
     public function add_text($text)
     {
         $this->formdata .= $text;
+    }
+
+    public function login_form ()
+    {
+
+        $this->insert_textbox("Username ", "username");
+        $this->insert_passwordbox("Password ", "password");
+        $this->insert_submit("Login");
     }
 
     public function getForm()
