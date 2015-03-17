@@ -11,7 +11,7 @@ function create_page($args)
     $content .= something($args);
     append_content($content);
 
-    $form = new Webform("", "POST", "myform");
+    $form = new Webform($_SERVER['PHP_SELF'], "POST", "myform");
     $form->add_text("<h3>Header</h3>");
     $form->insert_textbox("", "header");
     $formdata = $form->getForm();

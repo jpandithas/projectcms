@@ -5,7 +5,7 @@
  * Date: 19-Jan-15
  * Time: 8:56 PM
  */
-
+session_start();
 
 require_once("includes/bootstrap.php");
 boot();

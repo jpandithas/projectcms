@@ -12,7 +12,7 @@ class Webform
 
     public function __construct($action, $method, $name)
     {
-        $this->formdata = "<form name = " . $name ." action = ". $action. " method = ". $method." > ";
+        $this->formdata = "<form name = '$name' action = '$action' method = '$method'> ";
     }
 
     public function insert_textbox($text, $varname)
