@@ -15,7 +15,7 @@ boot();
 //echo $url->build_Path(array('action'=>"create",'type'=>"page"));
 //echo "<br>".$url->build_Link("mylink", "My Link Text", array('action'=>"create",'type'=>"page") );
 
-    $url= new URL();
-    $url->writeURL(array('action'=>"add",'type'=>null,'id'=>null));
-Redirection::Redirect($url);
+    //$url= new URL();
+   // $url->writeURL(array('action'=>"add",'type'=>null,'id'=>null));
+//Redirection::Redirect($url);
 ?>

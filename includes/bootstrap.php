@@ -10,9 +10,14 @@
  */
 function boot ()
 {
+
     fileloader("includes/classes/*");
     fileloader("includes/misc/*");
     $url = new URL();
+    if ($url->check_empty_url() and empty($_SESSION['user']))
+    {
+        $url->writeURL(array("action"=>"login"));
+    }
     Router::execute_Module($url, null);
     Theme::RenderTheme();
 }

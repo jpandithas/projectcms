@@ -36,6 +36,14 @@ class URL
         }
     }
 
+    public function check_empty_url()
+    {
+        if (empty($this->action) and empty($this->type))
+        {
+            return true;
+        }
+    }
+
     /**
      * @param array $URL
      */

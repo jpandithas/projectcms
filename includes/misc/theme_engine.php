@@ -28,7 +28,18 @@ function print_header()
 
 function print_sidebar()
 {
-    echo "<h3>Sidebar</h3>";
+    if (!isset($GLOBALS['sidebar']))
+    {
+      $sidebar = "<h3>Sidebar</h3>";
+    }
+    else
+    {
+      $sidebar = "<h3>Sidebar</h3>".$GLOBALS['sidebar'];
+    }
+
+    print($sidebar);
+
+
 }
 
 function print_footer()
@@ -49,4 +60,16 @@ function append_content($content)
             $GLOBALS['content'] = $content;
         }
     }
+
+function append_sidebar ($sidebar)
+{
+    if (isset($GLOBALS['sidebar']))
+    {
+        $GLOBALS['sidebar'] .= $sidebar;
+    }
+    else
+    {
+        $GLOBALS['sidebar'] = $sidebar;
+    }
+}
 ?>

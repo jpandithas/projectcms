@@ -27,7 +27,7 @@ class Webform
 
     public function insert_submit($text)
     {
-        $this->formdata .= "<br><input type='submit' value=".$text.">";
+        $this->formdata .= "<br><input type='submit' name='submit' value=".$text.">";
     }
 
     public function insert_option($name, Array $options)

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 16, 2015 at 05:45 PM
+-- Generation Time: Mar 20, 2015 at 01:26 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `routes` (
   `status` enum('Enabled','Disabled') NOT NULL,
   `function` varchar(50) NOT NULL,
   PRIMARY KEY (`rid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `routes`
@@ -43,7 +43,9 @@ CREATE TABLE IF NOT EXISTS `routes` (
 INSERT INTO `routes` (`rid`, `action`, `type`, `id`, `status`, `function`) VALUES
 (1, 'create', 'page', NULL, 'Enabled', 'create_page'),
 (2, 'create', 'user', NULL, 'Enabled', 'create_user'),
-(3, 'switch', 'theme', NULL, 'Enabled', 'switch_theme');
+(3, 'switch', 'theme', NULL, 'Enabled', 'switch_theme'),
+(4, 'login', NULL, NULL, 'Enabled', 'login'),
+(5, 'logout', NULL, NULL, 'Enabled', 'logout');
 
 -- --------------------------------------------------------
 

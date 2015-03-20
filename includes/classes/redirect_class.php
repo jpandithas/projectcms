@@ -29,7 +29,9 @@ class Redirection
 
         $basepath = "http://".$_SERVER['HTTP_HOST'].$_SERVER['SCRIPT_NAME'];
 
-        echo $basepath."?".$linktext;
+        $location =  $basepath."?".$linktext;
+
+        header("Location: $location");
 
 
     }
