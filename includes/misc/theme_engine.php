@@ -28,13 +28,21 @@ function print_header()
 
 function print_sidebar()
 {
-    if (!isset($GLOBALS['sidebar']))
+    if (isset($_SESSION['user']))
     {
-      $sidebar = "<h3>Sidebar</h3>";
+        $userdata = " USER: " . $_SESSION['user'];
     }
     else
     {
-      $sidebar = "<h3>Sidebar</h3>".$GLOBALS['sidebar'];
+        $userdata = " Visitor";
+    }
+    if (!isset($GLOBALS['sidebar']))
+    {
+      $sidebar = "<h3>Sidebar</h3>  $userdata";
+    }
+    else
+    {
+      $sidebar = "<h3>Sidebar</h3>" . $userdata . $GLOBALS['sidebar'];
     }
 
     print($sidebar);
@@ -46,7 +54,6 @@ function print_footer()
 {
     echo "Footer";
 }
-
 
 function append_content($content)
 
