@@ -6,16 +6,19 @@
 
 function create_page($args)
 {
-
-    $content =  " create_page With $args";
-    $content .= something($args);
-    append_content($content);
-
-    $form = new Webform($_SERVER['PHP_SELF'], "POST", "myform");
-    $form->add_text("<h3>Header</h3>");
-    $form->insert_textbox("", "header");
-    $formdata = $form->getForm();
-    append_content($formdata);
+    $user = new User();
+    if ($user->user_session_exists()) {
+        $content = " create_page With $args";
+        $content .= something($args);
+        append_content($content);
+    }
+    else
+    {
+        append_content("You need to login first");
+        $newurl = new URL();
+        $link = $newurl->build_Link("login_link", "HERE", array("action"=>"login"));
+        append_content("<br>Login $link");
+    }
 
 }
 

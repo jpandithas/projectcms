@@ -6,9 +6,12 @@
 
 class User
 {
+    /**
+     * @return bool
+     */
     public function user_session_exists()
     {
-        if ($_SESSION['user'])
+        if (isset($_SESSION['user']))
         {
             return true;
         }

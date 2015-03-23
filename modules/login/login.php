@@ -8,7 +8,7 @@ function login()
 
     append_content("<h3>Login</h3>");
 
-    if ($_POST['submit']=="Login")
+    if (isset($_POST['submit']) and ($_POST['submit']=="Login"))
     {
        if (empty($_POST['username']) or empty($_POST['password']))
        {
@@ -22,7 +22,7 @@ function login()
             if (authenticate($username, $password))
             {
                 $_SESSION['user'] = $_POST['username'];
-                append_content("Exists!");
+                append_content("Welcome user".$_SESSION['user']);
             }
             else
             {
@@ -38,6 +38,7 @@ function login()
 
 }
 
+
 /**
  *
  */
@@ -48,6 +49,11 @@ function show_login_form()
     append_content($form->getForm());
 }
 
+/**
+ * @param $username
+ * @param $password
+ * @return bool
+ */
 function authenticate($username, $password)
 {
   $sql = new dBQuery();

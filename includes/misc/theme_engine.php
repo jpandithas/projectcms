@@ -34,7 +34,7 @@ function print_sidebar()
     }
     else
     {
-        $userdata = " Visitor";
+        $userdata = " Welcome";
     }
     if (!isset($GLOBALS['sidebar']))
     {
@@ -46,6 +46,7 @@ function print_sidebar()
     }
 
     print($sidebar);
+    Sidebar::Navigation_main();
 
 
 }
