@@ -38,7 +38,7 @@ function print_sidebar()
     }
     if (!isset($GLOBALS['sidebar']))
     {
-      $sidebar = "<h3>Sidebar</h3>  $userdata";
+      $sidebar = "<h3>Sidebar</h3> " .$userdata;
     }
     else
     {
@@ -46,9 +46,6 @@ function print_sidebar()
     }
 
     print($sidebar);
-    Sidebar::Navigation_main();
-
-
 }
 
 function print_footer()

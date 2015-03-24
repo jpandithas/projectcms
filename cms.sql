@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 20, 2015 at 01:26 PM
+-- Generation Time: Mar 24, 2015 at 06:47 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -33,6 +33,7 @@ CREATE TABLE IF NOT EXISTS `routes` (
   `id` bigint(20) DEFAULT NULL,
   `status` enum('Enabled','Disabled') NOT NULL,
   `function` varchar(50) NOT NULL,
+  `permission` int(11) NOT NULL,
   PRIMARY KEY (`rid`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
@@ -40,12 +41,12 @@ CREATE TABLE IF NOT EXISTS `routes` (
 -- Dumping data for table `routes`
 --
 
-INSERT INTO `routes` (`rid`, `action`, `type`, `id`, `status`, `function`) VALUES
-(1, 'create', 'page', NULL, 'Enabled', 'create_page'),
-(2, 'create', 'user', NULL, 'Enabled', 'create_user'),
-(3, 'switch', 'theme', NULL, 'Enabled', 'switch_theme'),
-(4, 'login', NULL, NULL, 'Enabled', 'login'),
-(5, 'logout', NULL, NULL, 'Enabled', 'logout');
+INSERT INTO `routes` (`rid`, `action`, `type`, `id`, `status`, `function`, `permission`) VALUES
+(1, 'create', 'page', NULL, 'Enabled', 'create_page', 0),
+(2, 'create', 'user', NULL, 'Enabled', 'create_user', 0),
+(3, 'switch', 'theme', NULL, 'Enabled', 'switch_theme', 0),
+(4, 'login', NULL, NULL, 'Enabled', 'login', 11),
+(5, 'logout', NULL, NULL, 'Enabled', 'logout', 11);
 
 -- --------------------------------------------------------
 

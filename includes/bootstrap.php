@@ -19,6 +19,7 @@ function boot ()
         $url->writeURL(array("action"=>"login"));
     }
     Router::execute_Module($url, null);
+    Sidebar::Navigation_main();
     Theme::RenderTheme();
 }
 
