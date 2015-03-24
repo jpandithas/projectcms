@@ -9,13 +9,24 @@ class Sidebar
     {
         $pdo = new dBQuery();
         $url_links = new URL();
-        $sql  = "Select action, type, id, status, permission FROM routes";
+        $user = new User();
+        if ($user->user_session_exists())
+        {
+            $level = $_SESSION['userlevel'];
+            $sql  = "Select action, type, id, status, permission FROM routes WHERE permission >= $level ";
+        }
+        else
+        {
+            $sql  = "Select action, type, id, status, permission FROM routes WHERE permission >= 10 ";
+        }
+
         $rows = $pdo->sendpQuery($sql, array());
         append_sidebar("<h4>Navigation</h4>");
         append_sidebar("<ul id='sidebar-links'>");
         foreach ($rows as $lines)
         {
-           $linktext = $lines['action']." ".$lines['type'];
+            if ($user->user_session_exists() and $lines['action']=="login") continue;
+            $linktext = $lines['action']." ".$lines['type'];
             $url_components = array("action"=>$lines['action']);
             if (!empty($lines['type']))
             {

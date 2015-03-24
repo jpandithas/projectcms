@@ -22,7 +22,10 @@ function login()
             if (authenticate($username, $password))
             {
                 $_SESSION['user'] = $_POST['username'];
-                append_content("Welcome user".$_SESSION['user']);
+                $sql = new dBQuery();
+                $userdata = $sql->sendpQuery("Select ulevel from users WHERE uname = ?", array($username));
+                $_SESSION['userlevel'] = $userdata[0][0];
+                append_content("Welcome, user: ".$_SESSION['user']);
             }
             else
             {
