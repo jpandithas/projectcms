@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 24, 2015 at 06:47 PM
+-- Generation Time: Mar 30, 2015 at 08:07 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -46,7 +46,7 @@ INSERT INTO `routes` (`rid`, `action`, `type`, `id`, `status`, `function`, `perm
 (2, 'create', 'user', NULL, 'Enabled', 'create_user', 0),
 (3, 'switch', 'theme', NULL, 'Enabled', 'switch_theme', 0),
 (4, 'login', NULL, NULL, 'Enabled', 'login', 11),
-(5, 'logout', NULL, NULL, 'Enabled', 'logout', 11);
+(5, 'logout', NULL, NULL, 'Enabled', 'logout', 9);
 
 -- --------------------------------------------------------
 
@@ -84,14 +84,36 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` varchar(30) DEFAULT NULL,
   `ulevel` tinyint(3) unsigned NOT NULL,
   PRIMARY KEY (`uid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`uid`, `uname`, `passwd`, `fname`, `lname`, `email`, `ulevel`) VALUES
-(1, 'admin', 'admin', 'root', 'user', 'a@b.com', 0);
+(1, 'admin', 'admin', 'root', 'user', 'a@b.com', 0),
+(2, 'user', 'user', 'a user', 'user', 'user@user.com', 7);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `web_page`
+--
+
+CREATE TABLE IF NOT EXISTS `web_page` (
+  `pageid` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `content` blob,
+  `alias` varchar(255) NOT NULL,
+  PRIMARY KEY (`pageid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `web_page`
+--
+
+INSERT INTO `web_page` (`pageid`, `title`, `content`, `alias`) VALUES
+(4, 'MY PAGE', 0x4d592050616765, 'test');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
