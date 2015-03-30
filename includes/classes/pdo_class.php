@@ -21,7 +21,6 @@ class dBQuery
             $this->pdo = new PDO($connection_string, $username, $pass);
     }
 
-
     /**
      * @param $query
      * @param array $args
@@ -34,6 +33,14 @@ class dBQuery
         $q->execute($args);
         $data = $q->fetchAll();
         return $data;
+    }
+
+    public function insert_data($query, array $args)
+    {
+        $stmt = $this->pdo;
+        $q = $stmt->prepare($query);
+        $q->execute($args);
+        return $stmt->lastInsertId();
     }
 
     /**

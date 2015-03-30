@@ -46,6 +46,10 @@ class Webform
         $this->formdata .= $text;
     }
 
+    public function add_textarea($text, $rows, $cols, $name, $data)
+    {
+       $this->formdata .= "$text <br> <textarea name='".$name."' rows='".$rows."' cols='".$cols."'> $data </textarea><br>";
+    }
     public function login_form ()
     {
 
