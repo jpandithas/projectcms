@@ -50,6 +50,7 @@ class Webform
     {
        $this->formdata .= "$text <br> <textarea name='".$name."' rows='".$rows."' cols='".$cols."'> $data </textarea><br>";
     }
+
     public function login_form ()
     {
 

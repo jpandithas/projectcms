@@ -101,12 +101,14 @@ class dBQuery
             $query .= " AND type = ?";
             $args[] = $type;
         }
-        if (!empty($urldata['id']))
+     /* NOTE: Should be modified to check ID
+
+       if (!empty($urldata['id']))
         {
             $id = $urldata['id'];
             $query .= " AND id = ?";
             $args[] = $id;
-        }
+        } */
 
         $data = $this->sendpQuery($query,$args);
         if (!empty($data))
